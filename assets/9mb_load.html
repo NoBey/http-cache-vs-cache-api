@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+      
+      <script src="./9mb.js"></script>
+  </head>
+
+  <body>
+    <script>
+      async function fetchUrl(url) {
+        const response = await fetch(url);
+        const text = await response.text();
+        return text;
+      }
+
+     async function run(){
+         console.time('run')
+         await fetchUrl('/assets/9mb.js')
+         console.timeEnd('run')
+     }
+    //  run()
+    </script>
+  </body>
+</html>

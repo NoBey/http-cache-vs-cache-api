@@ -1,0 +1,25 @@
+{
+  "name": "http-cache-vs-cache-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:nocache": "http-server -c-1 --port 8080",
+    "dev:cache": "http-server --port 8081",
+    "dev": "npm run dev:cache & npm run dev:nocache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoBey/http-cache-vs-cache-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NoBey/http-cache-vs-cache-api/issues"
+  },
+  "homepage": "https://github.com/NoBey/http-cache-vs-cache-api#readme",
+  "dependencies": {
+    "http-server": "^13.0.0",
+    "puppeteer-core": "^10.2.0"
+  }
+}
